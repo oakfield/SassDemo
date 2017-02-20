@@ -6,48 +6,62 @@
 	<link rel="stylesheet" type="text/css" href="app.css" />
 </head>
 <body>
-	<article>
-		<header>
+	<div class="main">
+		<div class="background">
 			<div class="banner"></div>
 			<img alt="Sass logo" src="/App/assets/img/sass-logo.svg" />
-		</header>
-		<div class="container-login">
-			<div class="container-username">
-				<span class="label-text-explainer">
-					<span class="label-text">Username</span>
-				</span>
-				<input type="text" />
-			</div>
-			<div class="container-password">
-				<div class="label-text-explainer">
-					<div class="label-text">Password</div>
-					<a href="#" class="explainer">Forgot your password?</a>
-					<div class="tooltip">
-						<div class="tooltip-text">
-							Too bad
-						</div>
-					</div>
-				</div>
-				<input type="password" />
-			</div>
-			<div class="container-credit-card-number">
-				<div class="label-text-explainer">
-					<div class="label-text">Credit Card Number</div>
-					<a href="#" class="explainer">Why do we need this?</a>
-					<div class="tooltip">
-						<div class="tooltip-text">
-							For reasons
-						</div>
-					</div>
-				</div>
-				<input type="text" />
-			</div>
-			<div class="container-button">
-				<div class="button">
-					Log in
-				</div>
-			</div>
 		</div>
-	</article>
+		<form action="/" class="container-login">
+			<fieldset>
+				<legend>Sign in</legend>
+				<section class="container-username">
+					<div class="label-text-explainer">
+						<label class="label-text" for="username">
+							Username
+						</label>
+					</div>
+					<input id="username" type="text" />
+				</section>
+				<section class="container-password">
+					<div class="label-text-explainer">
+						<label class="label-text">
+							Password
+						</label>
+						<a href="#" class="explainer">
+							Forgot your password?
+						</a>
+						<div class="tooltip">
+							<div class="tooltip-text">
+								Too bad
+							</div>
+						</div>
+					</div>
+					<input for="password" type="password" />
+				</section>
+				<section class="container-credit-card-number">
+					<div class="label-text-explainer">
+						<label class="label-text" for="credit-card-number">
+							Credit Card Number
+						</label>
+						<abbr title="required">*</abbr>
+						<a href="#" class="explainer">
+							Why do we need this?
+						</a>
+						<div class="tooltip">
+							<div class="tooltip-text">
+								For reasons
+							</div>
+						</div>
+					</div>
+					<input id="credit-card-number" type="text" />
+				</section>
+				<div class="container-button">
+					<div class="button">
+						Log in
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</div>
 </body>
 </html>
