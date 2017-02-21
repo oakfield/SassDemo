@@ -1,0 +1,30 @@
+{
+  "name": "sassdemo",
+  "version": "1.0.0",
+  "description": "Demo for Solera brown bag on Sass",
+  "main": "app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "~0.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oakfield/SassDemo.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Michael C Smith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oakfield/SassDemo/issues"
+  },
+  "homepage": "https://github.com/oakfield/SassDemo#readme"
+}

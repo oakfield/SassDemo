@@ -1,0 +1,120 @@
+a:hover + .tooltip {
+	display: block;
+}
+
+body {
+	background-color: #eee;
+	font-family: sans-serif;
+	height: 100vh;
+}
+
+fieldset {
+	border: 1px solid gray;
+	border-radius: 3px;
+}
+
+form {
+	height: 550px;
+	position: relative;
+}
+
+img {
+	left: -50px;
+	opacity: 0.6;
+	position: absolute;
+	top: -50px;
+	width: 700px;
+}
+
+input {
+	border: 1px solid gray;
+	border-radius: 3px;
+	clear: both;
+	height: 20px;
+	margin-bottom: 10px;
+	width: 100%;
+
+	&:focus {
+		outline-color: pink;
+	}
+}
+
+.banner {
+	background-image: linear-gradient(#036, #fff);
+	height: 330px;
+	transform: skewY(-10deg);
+	transform-origin: top left;
+	width: 100%;
+}
+
+.button {
+	background-color: #699;
+	border-color: #699;
+	border-radius: 3px;
+	color: white;
+	cursor: pointer;
+	font-weight: bold;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 10px;
+	padding: 4px 10px;
+
+	&:hover, &:focus {
+		background-color: #7aa;
+	}
+}
+
+.container-login {
+	left: 50%;
+	position: absolute;
+	top: 60%;
+	transform: translate(-50%);
+}
+
+.explainer {
+	color: #05a;
+	float: right;
+}
+
+.label-text {
+	display: inline-block;
+	font-weight: bold;
+}
+
+.label-text-explainer {
+	display: block;
+}
+
+.main {
+	background-color: white;
+	height: calc(100% - 20px);
+	left: 50%;
+	overflow: hidden;
+	position: relative;
+	transform: translate(-50%);
+	width: 600px;
+}
+
+.tooltip {
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 5px;
+	box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.2);
+	display: none;
+	height: 40px;
+	padding: 5px;
+	position: absolute;
+	right: 100px;
+}
+
+.tooltip-text {
+	left: 50%;
+	position: relative;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+[class^="container-"] {
+	margin-bottom: 10px;
+	width: 77%;
+}
